@@ -7,8 +7,20 @@
     <title>Library</title>
 </head>
 <body>
-
-
+    <button id="open-form-btn">Ajouter un livre</button>
+    <div id="form-container" style="display: none;">
+        <form id="book-form">
+            <input type="text" id="title" placeholder="Titre" required />
+            <input type="text" id="author" placeholder="Auteur" required />
+            <input type="number" id="pages" placeholder="Pages" required />
+            <label>
+            <input type="checkbox" id="read" />
+            Lu ?
+            </label>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <div id="book-card"></div>
 
     
     <script src="script.js"></script>
